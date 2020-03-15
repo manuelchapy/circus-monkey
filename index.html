@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!--[if lt IE 9]><!-->
+   	 <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js' type='text/javascript'></script>
+    <!--<![endif]--> 
+
+    <!--[if (gte IE 9) | (!IE)]><!-->  
+      <script src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js' type='text/javascript'></script>
+    <!--<![endif]--> 
+	<script src="./js/SnowflyGameApi.js"></script>
+    <script src="./js/lottie.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+    <script src="./js/jquery.ui.touch-punch.min.js"></script>
+	<title>Circus Knife Throwing</title>
+</head>
+<body>
+        <audio class='disp-none sound' id='pre-sound' src="./assets/sounds/pre_theme.mp3" controls="false"></audio>    
+        <audio class='disp-none sound' id='sound-music' src="./assets/sounds/sd-new_gral.mp3" controls="false"></audio>    
+        <audio class='disp-none sound' id='hit' src="./assets/sounds/hit.mp3" controls="false"></audio>
+        <audio class='disp-none sound' id='knife1' src="./assets/sounds/1knife.mp3" controls="false"></audio>
+        <audio class='disp-none sound' id='knife2' src="./assets/sounds/2knife.mp3" controls="false"></audio>
+        <audio class='disp-none sound' id='knife3' src="./assets/sounds/3knife.mp3" controls="false"></audio>
+        <audio class='disp-none sound' id='crowd' src="./assets/sounds/crowd.mp3" controls="false"></audio>
+
+        <!-- Game -->
+		<div class="super-container relative c-container h-100">
+		  <div class="main-container c-container layer">
+		  	<!--gameplay screen-->
+		   <div id="no-tokens-screen" class="layer"></div>
+		   <div class="layer" id="token-screen">
+			<div class="layer no-server-request" id="no-server-request">
+			<div class="mg-t" id="t-s"></div>
+			</div>
+						<div class="layer" id="environment"></div>
+						<div class="layer" id="clown"></div>
+						<div class="layer" id="torchs"></div>
+						<div class="layer" id="balance"></div>
+						<div class="layer" id="knife"></div>
+						<div class="layer" id="monkey"></div>
+						<div class="layer" id="wininng-screen"></div>
+						<div class="layer" id="celebration10"></div>
+			<div class="layer">
+                    <div class="flex-v">
+                        <div class="flex-h">
+                            <div class="layer" id="play-again"></div>
+                            <div class="layer" id="games" onclick=""></div>
+                        </div>
+                    </div>
+                </div>
+		  </div>
+		  	<!--//gameplay screen-->
+			<!--token screen-->
+			<div class="layer" id='init-animations'>
+				<div class="layer" id="token-screen" class="token-screen">
+				  <div class="layer">
+					<div class="layer" id="overlay"></div>
+					<div class="layer"></div>
+					<div class="score-container flex-h">
+					 	<div id="balance-ts"></div>	
+					</div>
+				   </div>		
+				</div>
+				<div class="flex-v layer">
+					<div class="flex-v" id="token-container">
+						<div class="flex-h w-30 c-container">
+							<div class="flex-v">
+								<!--<img src="./assets/img/question.png" alt="">-->
+							</div>
+						</div>
+						</div>
+						<div id="token-ui"></div>
+							<div id="bar">
+								<img class="draggable" 	src="./assets/img/selector.svg" alt="">
+							</div>
+						<div id="token-p">
+						</div>
+						<div class="flex-h w-30 c-container" id="amount-container">
+							<div class="flex-v">
+								<div id="tokens-amount"></div>
+							</div>
+							<!--<div class="flex-v">
+								<div class="t-center f-22 lato">Tokens<br>To play</div>
+							</div>-->
+						</div>
+						<div id="monkey-button"></div>
+					</div>
+				</div>
+			<!-- //token screen-->
+			</div>
+				<!-- Start Screen -->
+				<div class="layer" id="init-screen">
+					<div id="flag" class="flag"></div>
+					<div id="start-button"></div>
+				</div>
+							<div class='sound-container' id="sound">
+                    <img src='./assets/img/sound_on.png' class="sound-toggle"/>
+            </div>
+				<!-- Start Screen -->
+
+			</div>
+		</div>
+		<div class="loading" id='loading-screen'>
+                <div class="flex-h">
+                </div>
+            </div>
+		<script type="text/javascript" src="./js/timeout.js"></script>
+       <script src="./js/jsons.js" type="text/javascript"></script>
+        <script src="./js/main.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function(){
+                loading()
+            })
+        </script>
+
+</body>
+</html>

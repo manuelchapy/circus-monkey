@@ -1,0 +1,42 @@
+Reemplazar los siguientes jsons:
+
+balance.json
+clown.jon
+environment.json
+
+Ahora cada uno tiene un layer llamado playID en donde hay que escoger el checkbox correspondiente al playID que retorne del API
+
+Aquí la lista del index de ese layer en cada json
+
+balance.json: index 2
+clown.jon: index 0
+environment.json: index 0
+
+Esta nueva modificación hará que el payaso salga más cerca o más lejos de manera dinámica, basados en el playID
+
+--------
+
+Integrar estos nuevos 3 jsons:
+
+id8.json
+id9.json
+id10.json
+
+Como está hasta ahora funcionará hasta el playID 7. El 8, 9 y 10 deben disparar su propio json. 
+
+Aquí debes deshacerte del checking_low.json para estos ID y mostrar el correspondiente.
+
+El winning_screen.json debe ejecutarse en todos menos en el playID 10, que tendrá ya integrado su puntaje. Al igual que el winning_screen.json, el id10.json tiene los text layers para tokens played y points won en los index 0,1
+
+Al id10.json le puse dos clases css ".again" y ".games" 
+
+el .again debe volver a iniciar el juego y al .games ponle mientras esta url: snowfly.com
+
+IMPORTANTE:
+
+Cuando sea el caso del id8.json y id9.json, ejecutar el winning_screen.json unos 4800 ms una vez que ellos hayan iniciado.
+
+START SCREEN:
+
+Poner la img de fondo y el flag.json encima, loopeable.
+

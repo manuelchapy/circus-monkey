@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  line-height: normal; }
+
+  body {
+  overflow: hidden;
+  font-family: "Lato";
+  background-color: rgba(0,0,0,0.05);
+  background: #fcfcfc; }
+
+.relative {
+  position: relative; }
+
+.c-container {
+  margin: 0 auto;
+  display: block; }
+
+.h-100 {
+  height: 100%; }
+
+.layer{
+  /*background-color: rgba(0,0,0,.02);*/
+  width: 100%;
+  z-index: 100;
+  max-width: 1120px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 auto; }
+
+
+#overlay {
+  /*background: rgba(255, 255, 255, .75)*/
+}
+
+#token-screen{
+  background-image: url('../assets/img/token-bg.png'); 
+  max-height: 1060px !important;
+}
+
+.score-container{
+  margin-top: 20px;
+}
+
+.flex-h {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.panel-button{
+  width: 40px;
+  height: 40px;
+}
+
+#tokens-screen{
+  width: 900px;
+  height: 900px;
+}
+
+#points-container .flex-h.space-around{
+  margin-top: 32%; }
+
+#points-container{
+  font-family: 'Montserrat';
+  margin: 5% auto;
+  width: 88%;
+  color: #fff;
+  font-size: 22px;}
+
+.t-center {
+  text-align: center; }
+
+.white-color {
+  color: #FFF; }
+
+.panel{
+  background-image: url(../assets/img/panel.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 40px;
+}
+
+.flex-v {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.w-30 {
+  width: 30%; }
+
+.f-22 {
+  font-size: 22px; }
+
+.mg-t{
+  margin-top: 45%;
+}
+
+/*#amount-container {
+border-bottom: 1px solid #000;}*/
+
+#bar{
+  z-index: 10;
+  background-image: url(../assets/img/bar.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 95%;
+  height: 29px;
+  margin: 5% auto;
+  border-radius: 20px;}
+
+.draggable{
+  margin: -1px 0px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;}
+
+#token-p{
+ background-image: url('../assets/img/1-250.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: -15px auto 0px;
+  margin-bottom: 20px;
+  width: 90%;
+  height: 31px; 
+  min-height: 45px !important;
+  }
+
+#token-ui{
+  background-image: url('../assets/img/farnear.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 60px auto 0px;
+  margin-bottom: -20px;
+  width: 90%;
+  height: 28px; 
+  min-height: 42px !important;
+  }
+
+#tokens-amount{
+    margin-right: 20px;
+    padding: 0;
+    line-height: normal;
+    color: rgb(92, 38, 102);
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.lato{
+  font-weight: bold;
+  color: white;
+}
+
+.lato-b{
+  font-weight: bold;
+  color: black;
+}
+.p-size{
+  font-size: 25px;
+}
+
+#monkey-button {
+  width: 20%;
+  position: absolute;
+  bottom: 12%;
+  left: 40%; }
+
+#no-tokens-screen{
+  background: url('../assets/img/nogametokens.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: none;
+}
+
+.no-server-request{
+    display: none;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-family: cursive;
+    background: rgb(65,176,189) !important;
+    z-index: 101 !important;
+}
+
+#init-screen > div{
+  margin: 35% auto;
+  height: 90%; }
+
+  #start-button {
+  margin: 0 auto;
+  width: 180px;
+  z-index: 10; }
+
+#init-screen{
+  background-image: url(../assets/img/start_screen.png);
+}
+
+button[disabled] {
+  opacity: 0.5; }
+
+.disabled { 
+  opacity: 0.2;
+  pointer-events: none;  }
+
+.disp-none {
+  display: none; }
+
+.sound-container{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  z-index: 101;
+  top: 20px;
+  left: 20px;
+}
+
+#play-again{
+  width: 24%;
+  margin: -84% auto;
+  z-index: 0;
+  bottom: 1.5%;
+  position: absolute;
+  left: 38.5%;
+  background-color: rgba(0,0,0,0) !important;
+}
+
+#games{
+    width: 31%;
+  margin: -44% auto;
+  z-index: 0;
+  bottom: 1.5%;
+  position: absolute;
+  left: 0%;
+  background-color: rgba(0,0,0,0) !important;
+}
+
+.flag{
+  height: 100%;
+  width: 100%;
+  margin: 2% auto !important;
+  left: 1.5% !important;
+  position: absolute !important; 
+}
+
+.w-100 {
+  width: 100% !important; }
+
+.loading{
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  z-index: 999;
+  background-color: white;
+  margin: 0 !important;
+}
+
+@media (max-width: 301px){
+  #amount-container {
+    bottom: 50%;
+  }
+
+  #monkey-button{
+    bottom: 0%;
+  }
+
+ #token-p{
+  width: 96%;
+ }
+
+ #token-ui{
+   margin-bottom: -12%;
+ }
+
+ #soundz{
+  top: 3px;
+ }
+}

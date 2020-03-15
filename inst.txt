@@ -1,0 +1,32 @@
+TOKEN SCREEN
+___
+
+Use: amountToBet for balance of tokens, points and tokens to play
+
+Check layers with index 0,1,2 to pass the data of the balance
+
+
+GAMEPLAY SCREEN
+___
+
+Layer order:
+
+Checking Low
+Knife
+Balance (Check layers with index 0,1 to pass the data of the balance)
+Monkey
+Torchs
+Clown
+Environment
+
+
+WINNING SCREEN
+___
+
+Trigger Winning_screen with a timeout of 12500 ms (It needs to start at the same time that the jsons of the gameplay
+
+Check layers with index 0,1 to pass the data of the balance
+
+Check layer with index 2 to pass the data of playID 
+ 
+ 
