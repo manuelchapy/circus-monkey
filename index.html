@@ -45,9 +45,10 @@
 						<div class="layer" id="wininng-screen"></div>
 						<div class="layer" id="celebration10"></div>
 			<div class="layer">
+
                     <div class="flex-v">
                         <div class="flex-h">
-                            <div class="layer" id="play-again"></div>
+                        	<div class="layer" id="play-again"></div>
                             <div class="layer" id="games" onclick=""></div>
                         </div>
                     </div>
@@ -56,7 +57,7 @@
 		  	<!--//gameplay screen-->
 			<!--token screen-->
 			<div class="layer" id='init-animations'>
-				<div class="layer" id="token-screen" class="token-screen">
+				<div class="layer" id="token-screen">
 				  <div class="layer">
 					<div class="layer" id="overlay"></div>
 					<div class="layer"></div>
@@ -66,26 +67,13 @@
 				   </div>		
 				</div>
 				<div class="flex-v layer">
-					<div class="flex-v" id="token-container">
-						<div class="flex-h w-30 c-container">
-							<div class="flex-v">
-								<!--<img src="./assets/img/question.png" alt="">-->
-							</div>
-						</div>
-						</div>
-						<div id="token-ui"></div>
-							<div id="bar">
-								<img class="draggable" 	src="./assets/img/selector.svg" alt="">
-							</div>
-						<div id="token-p">
+					<div class="sliderContainer">
+							<input type="range" min="1" max="250" value="1" id="myRange" class="slider">
 						</div>
 						<div class="flex-h w-30 c-container" id="amount-container">
 							<div class="flex-v">
 								<div id="tokens-amount"></div>
 							</div>
-							<!--<div class="flex-v">
-								<div class="t-center f-22 lato">Tokens<br>To play</div>
-							</div>-->
 						</div>
 						<div id="monkey-button"></div>
 					</div>
@@ -93,9 +81,12 @@
 			<!-- //token screen-->
 			</div>
 				<!-- Start Screen -->
-				<div class="layer" id="init-screen">
-					<div id="flag" class="flag"></div>
-					<div id="start-button"></div>
+				<div class="layer" id="s-layer">
+			    <div class="layer" id="start-screen">
+			    </div>				   
+			    <div id="start-button-container">
+			    	 	<div id="start-button"></div>
+			    </div>	
 				</div>
 							<div class='sound-container' id="sound">
                     <img src='./assets/img/sound_on.png' class="sound-toggle"/>
