@@ -146,6 +146,14 @@ border-bottom: 1px solid #000;}*/
     color: rgb(92, 38, 102);
     font-size: 60px;
     font-weight: bold;
+    width: 60% !important;
+    height: 60% !important;
+}
+
+#tokens-amount > svg{
+  left: 0;
+  top: 0;
+  position: absolute;
 }
 
 .lato{
@@ -164,8 +172,10 @@ border-bottom: 1px solid #000;}*/
 #monkey-button {
   width: 20%;
   position: absolute;
-  bottom: 12%;
-  left: 40%; }
+  bottom: 5%;
+  left: 40%; 
+  cursor: pointer;
+}
 
 #no-tokens-screen{
   background: url('../assets/img/nogametokens.png');
@@ -173,6 +183,11 @@ border-bottom: 1px solid #000;}*/
   background-repeat: no-repeat;
   background-position: center;
   display: none;
+}
+
+#balance-ts{
+  height: 100%;
+  width: 100%;
 }
 
 .no-server-request{
@@ -185,17 +200,22 @@ border-bottom: 1px solid #000;}*/
     z-index: 101 !important;
 }
 
-#init-screen > div{
-  margin: 35% auto;
-  height: 90%; }
 
   #start-button {
   margin: 0 auto;
-  width: 180px;
-  z-index: 10; }
+  width: 120px;
+  z-index: 10; 
+  cursor:pointer;
+}
 
-#init-screen{
-  background-image: url(../assets/img/start_screen.png);
+#start-button-container {
+  position: absolute;
+  display: block;
+  bottom: 6.5%;
+  width: 100%; }
+
+#start-screen{
+  z-index: -1;
 }
 
 button[disabled] {
@@ -218,13 +238,14 @@ button[disabled] {
 }
 
 #play-again{
-  width: 24%;
-  margin: -84% auto;
-  z-index: 0;
-  bottom: 1.5%;
-  position: absolute;
-  left: 38.5%;
-  background-color: rgba(0,0,0,0) !important;
+    width: 26%;
+    height: 6% !important;
+    margin: auto;
+    z-index: 0;
+    bottom: 10.5%;
+    left: 37.5%;
+    background-color: rgba(0,0,0,0) !important;
+    cursor: pointer;
 }
 
 #games{
@@ -257,24 +278,73 @@ button[disabled] {
   margin: 0 !important;
 }
 
-@media (max-width: 301px){
-  #amount-container {
-    bottom: 50%;
-  }
 
-  #monkey-button{
-    bottom: 0%;
-  }
 
- #token-p{
-  width: 96%;
- }
-
- #token-ui{
-   margin-bottom: -12%;
- }
-
- #soundz{
-  top: 3px;
- }
+.again{
+  cursor: ns-resize;
 }
+
+    @charset "utf-8";
+
+    .sliderContainer {
+      width: 85%;
+      margin: 0 auto;
+      z-index: 99
+    }
+
+    /*.slider::after{
+      content: '250';
+      color: white;
+      font-size: 2rem;
+      position: absolute;
+      left: 83%;
+      top: 22%;
+    }
+
+    .slider::before {
+      content: '0';
+      color: white;
+      font-size: 2rem;
+      position: absolute;
+      left: 13.5%;
+      top: 22%;
+    }*/
+
+    .slider {
+     -webkit-appearance: none;
+     width: 100%;
+     height: 20px;
+     background: linear-gradient(90deg, rgb(214,214,214) 60%, rgb(214,214,214) 60%);
+     outline: none;
+     opacity: 0.7;
+     -webkit-transition: 0.2s;
+     transition: opacity 0.2s;
+     border-radius: 12px;
+     box-shadow: 0px 1px 10px 1px rgba(26,26,26, .3);
+    
+    }
+
+   
+
+    .slider:hover {
+      opacity: 1;
+    }
+
+    .slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 40px;
+      height: 40px;
+      background: white;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .slider::-moz-range-thumb {
+      width: 40px;
+      height: 40px;
+      background: white;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+
